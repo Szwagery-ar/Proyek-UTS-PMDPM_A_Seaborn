@@ -16,7 +16,7 @@ if selected == 'Klasifikasi':
 
     model_path = r'BestModel_CLF_RF_Seaborn.pkl'
     
-    with open(model, 'rb') as f:
+    with open(model_path, 'rb') as f:
         loaded_model = pickle.load(f)
 
     rf_model = loaded_model
@@ -64,7 +64,7 @@ if selected == 'Regresi':
 
     model_path = r'BestModel_REG_SVR_Seaborn.pkl'
     
-    with open(model, 'rb') as f:
+    with open(model_path, 'rb') as f:
         loaded_model = pickle.load(f)
 
     rf_model = loaded_model
