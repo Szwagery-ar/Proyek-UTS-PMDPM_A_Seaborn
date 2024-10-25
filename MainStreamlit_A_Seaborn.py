@@ -14,8 +14,7 @@ with st.sidebar:
 if selected == 'Klasifikasi':
     st.title('Prediksi Kategori Rumah')
 
-    model_path = r'C:\Kuliah\.Semester 5\ML\Proyek UTS PMDPM_A_Seaborn'
-    model = os.path.join(model_path, 'BestModel_CLF_RF_Seaborn.pkl')
+    model_path = r'BestModel_CLF_RF_Seaborn.pkl'
     
     with open(model, 'rb') as f:
         loaded_model = pickle.load(f)
@@ -63,8 +62,7 @@ if selected == 'Klasifikasi':
 if selected == 'Regresi':
     st.title('Prediksi Harga Rumah')
 
-    model_path = r'C:\Kuliah\.Semester 5\ML\Proyek UTS PMDPM_A_Seaborn'
-    model = os.path.join(model_path, 'BestModel_REG_SVR_Seaborn.pkl')
+    model_path = r'BestModel_REG_SVR_Seaborn.pkl'
     
     with open(model, 'rb') as f:
         loaded_model = pickle.load(f)
