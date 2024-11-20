@@ -5,6 +5,7 @@ from streamlit_option_menu import option_menu
 import numpy as np
 
 # testing
+# testing 2
 with st.sidebar:
     selected = option_menu(
         'Proyek UTS PMDPM_A_Seaborn',
